@@ -1,0 +1,98 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: #333;
+}
+
+#addNoteForm {
+    margin-top: 20px;
+}
+
+#addNoteForm form {
+    display: flex;
+    flex-direction: column;
+}
+
+#addNoteForm input,
+#addNoteForm textarea,
+#addNoteForm button {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#addNoteForm button {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+/* Monit z rejestracją */
+#registerForm,
+#loginForm {
+    display: none;
+}
+
+/* Logowanie i rejestracja */
+#registerForm,
+#loginForm {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#registerForm h3,
+#loginForm h3 {
+    color: #333;
+    text-align: center;
+}
+
+#registerForm input,
+#loginForm input {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#registerForm button,
+#loginForm button {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    #registerForm,
+    #loginForm {
+        width: 80%;
+    }
+}
